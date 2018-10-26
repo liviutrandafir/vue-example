@@ -8,7 +8,7 @@
 				<b-col>
 					<div class="cover-options">
 						<b-button-group size="sm">
-				      <b-button v-for="btn in buttons" :pressed.sync="btn.state" :variant="btn.variant" :key="btn.variant">
+				      <b-button v-for="btn in buttons" :pressed.sync="btn.state" :variant="btn.variant" :key="btn.caption">
 								<img :src="btn.icon"> {{ btn.caption }}
 				      </b-button>
 				    </b-button-group>
