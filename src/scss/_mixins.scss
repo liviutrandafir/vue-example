@@ -1,0 +1,37 @@
+@mixin widget-card {
+  background: #ffffff;
+  margin-top: 15px;
+  padding: 15px;
+  border: 1px solid #d0d1d5;
+}
+
+@mixin widget-header {
+	border: 1px solid #d0d1d5;
+	background: #f6f7f9;
+	padding: 10px 15px;
+
+	h4 {
+		font-size: 12px;
+		font-weight: 700;
+		margin: 0;
+	}
+}
+
+@mixin about-text-section($text-color) {
+	margin-bottom: 10px;
+
+	span {
+		vertical-align: top;
+		display: inline-block;
+		font-size: 12px;
+		color: $text-color;
+
+		&.icon {
+			width: 10%;
+		}
+
+		&.text {
+			width: 90%;
+		}
+	}
+}
