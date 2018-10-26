@@ -1,5 +1,7 @@
 # optaros-test
 
+[Link to demo](https://liviutrandafir.github.io/test-optaros/dist/#/).
+
 > A Vue.js project
 
 ## Build Setup
