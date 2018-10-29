@@ -44,16 +44,16 @@
 					<span>Liked</span>
 				</button>
 				<button class="button-blue">
-					<span class="mobile-like-icon"></span>
-					<span>Liked</span>
+					<span class="mobile-follow-icon"></span>
+					<span>Following</span>
 				</button>
 				<button>
-					<span class="mobile-like-icon"></span>
-					<span>Liked</span>
+					<span class="mobile-messages-icon"></span>
+					<span>Message</span>
 				</button>
 				<button>
-					<span class="mobile-like-icon"></span>
-					<span>Liked</span>
+					<span class="mobile-more-icon"></span>
+					<span>More</span>
 				</button>
 			</div>
 		</div>
@@ -183,6 +183,7 @@
 				background-color: none;
 				border: none;
 				text-align: center;
+				color: #6a7180;
 
 				&.button-blue {
 					color: $mainColor;
@@ -195,8 +196,7 @@
 				span {
 					display: block;
 					font-weight: 700;
-					background-size: 90%;
-					background-position: 7px -164px;
+					background-size: 120%;
 					left: 0;
 					right: 0;
 					margin: auto;

@@ -1,10 +1,16 @@
 <template>
 	<div class="widget-sidebar">
 		<div class="profile-type-widget">
-			<div class="profile-type-widget__text">
-				<span>Business service • London, United Kingdom</span>
-			</div>
-			<star-rating v-bind:star-size="20" active-color="#4080ff"></star-rating>
+			<b-row>
+				<b-col cols="12" order="2" order-sm="2" order-md="1" order-lg="1">
+					<div class="profile-type-widget__text">
+						<span>Business service • London, United Kingdom</span>
+					</div>
+				</b-col>
+				<b-col cols="12" order="1" order-sm="1" order-md="2" order-lg="2">
+					<star-rating class="stars-rating" v-bind:star-size="20" active-color="#4080ff"></star-rating>
+				</b-col>
+			</b-row>
 		</div>
 		<div class="search-widget">
 			<b-form-input size="sm" class="mr-sm-2" type="text" placeholder="Search for posts on this page..."/>
@@ -127,6 +133,29 @@ SE1 0HS London</span>
 
 				.website {
 					@include about-text-section(#36589f);
+				}
+			}
+		}
+	}
+
+	@media (max-width: 767px) {
+		.profile-type-widget {
+			margin-top: 0;
+			text-align: center;
+			border-right: none;
+			border-left: none;
+
+			&__text {
+				margin-bottom: 5px;
+			}
+
+			.stars-rating {
+				margin-bottom: 15px;
+
+				& > div {
+					left: 0;
+					right: 0;
+					margin: auto;
 				}
 			}
 		}

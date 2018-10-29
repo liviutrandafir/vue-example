@@ -33,12 +33,17 @@
 .m-stickybar-notifications-icon, .mobile-more-icon, .mobile-like-icon, .mobile-follow-icon
 { display: inline-block; background: url(../assets/mobile-sprite-icons.png) no-repeat; overflow: hidden; text-indent: -9999px; text-align: left; }
 
-.m-stickybar-friends-icon { background-position: -5px -0px; width: 49px; height: 42px; }
-.mobile-messages-icon { background-position: -5px -47px; width: 48px; height: 41px; }
-.m-stickybar-messenger-icon { background-position: -5px -93px; width: 42px; height: 42px; }
-.m-stickybar-more-icon { background-position: -5px -140px; width: 42px; height: 33px; }
-.m-stickybar-newsfeed-icon { background-position: -5px -178px; width: 42px; height: 39px; }
-.m-stickybar-notifications-icon { background-position: -5px -222px; width: 42px; height: 42px; }
-.mobile-more-icon { background-position: -5px -269px; width: 41px; height: 10px; }
-.mobile-like-icon { background-position: -5px -284px; width: 38px; height: 25px; }
-.mobile-follow-icon { background-position: -5px -328px; width: 37px; height: 41px; }
+.m-stickybar-friends-icon { background-position: -20px -0px; width: 49px; height: 42px; }
+.m-stickybar-messenger-icon { background-position: -20px -123px; width: 42px; height: 42px; }
+.m-stickybar-more-icon { background-position: -20px -185px; width: 42px; height: 33px; }
+.m-stickybar-newsfeed-icon { background-position: -20px -238px; width: 42px; height: 39px; }
+.m-stickybar-notifications-icon { background-position: -20px -297px; width: 42px; height: 42px; }
+// .mobile-more-icon { background-position: -20px -359px; width: 41px; height: 10px; }
+// .mobile-like-icon { background-position: -20px -389px; width: 38px; height: 39px; }
+// .mobile-follow-icon { background-position: -20px -448px; width: 37px; height: 41px; }
+//.mobile-messages-icon { background-position: -20px -62px; width: 48px; height: 41px; }
+
+.mobile-messages-icon { background-position: -1px -40px; width: 48px; height: 25px; }
+.mobile-more-icon { background-position: -1px -189px; width: 41px; height: 25px; }
+.mobile-like-icon { background-position: -1px -196px; width: 38px; height: 25px; }
+.mobile-follow-icon { background-position: 0px -222px; width: 37px; height: 25px; }

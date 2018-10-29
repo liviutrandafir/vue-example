@@ -1,10 +1,10 @@
 <template>
 	<div class="page-content">
 		<b-row>
-			<b-col cols="8">
+			<b-col  xs="12" sm="12" md="8" lg="8" order="2" order-sm="2" order-md="1" order-lg="1">
 				<NewsFeed />
 			</b-col>
-			<b-col cols="4">
+			<b-col  xs="12" sm="12" md="4" lg="4" order="1" order-sm="1" order-md="2" order-lg="2">
 				<WidgetSidebar />
 			</b-col>
 		</b-row>
@@ -23,4 +23,11 @@
 	};
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+	@media (max-width: 767px) {
+		.page-content {
+			margin: 0 -15px;
+			overflow: hidden;
+		}
+	}
+</style>
