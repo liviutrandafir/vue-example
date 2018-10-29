@@ -2,16 +2,19 @@
 	<div class="main-header">
 		<b-container>
 			<b-row>
-				<b-col sm="6">
+				<b-col sm="12" md="6">
 					<div class="navbar-left">
-						<b-navbar-brand href="#"><img src="@/assets/logo.png"></b-navbar-brand>
+						<b-navbar-brand class="d-none d-sm-none d-md-block" href="#"><img src="@/assets/logo.png"></b-navbar-brand>
+						<div class="back-button d-block d-sm-block d-md-none">
+							<button class="back-icon"></button>
+						</div>
 						<b-nav-form class="main-header__search">
 							<b-form-input size="sm" class="mr-sm-2" type="text" placeholder="Every Interaction"/>
-							<b-button type="submit"><img src="@/assets/search-icon.png"></b-button>
+							<b-button type="submit"><span class="search-icon"></span></b-button>
 						</b-nav-form>
 					</div>
 				</b-col>
-				<b-col sm="6">
+				<b-col sm="6" class="d-none d-sm-none d-md-block">
 					<div class="navbar-right">
 						<div class="options-menu">
 							<div class="profile-button">
@@ -28,12 +31,15 @@
 							</button>
 						</div>
 						<div class="notifications-menu">
-							<button><img src="@/assets/friends-icon.png"></button>
-							<button><img src="@/assets/messages-icon.png"></button>
-							<button><img src="@/assets/globe-icon.png"></button>
+							<button><span class="friends-icon"></span></button>
+							<button><span class="messages-icon"></span></button>
+							<button><span class="globe-icon"></span></button>
 						</div>
 						<div class="settings-menu">
-							<button><span><img src="@/assets/lock-icon.png"></span><span><img src="@/assets/arrow-icon.png"></span></button>
+							<button>
+								<span class="lock-icon"></span>
+								<span class="arrow-icon"></span>
+							</button>
 						</div>
 					</div>
 				</b-col>
@@ -50,6 +56,7 @@
 
 <style lang="scss">
 	@import "~/_variables.scss";
+	@import "~/_sprite-icons.scss";
 
 	#app .main-header {
 		background-color: $mainColor !important;
@@ -197,10 +204,13 @@
 				button {
 					background: none;
 					border: none;
-					line-height: 12px;
+					line-height: 0px;
 					min-height: 20px;
+					padding: 5px;
+					transition: 100ms ease-in-out;
 
 					&:hover {
+						opacity: 0.7;
 						cursor: pointer;
 					}
 				}
@@ -214,9 +224,16 @@
 				button {
 					background: none;
 					border: none;
+					transition: 100ms ease-in-out;
+
+					&:hover {
+						cursor: pointer;
+						opacity: 0.7;
+					}
 
 					span {
 						display: inline-block;
+						vertical-align: middle;
 						margin-left: 5px;
 					}
 				}
@@ -234,7 +251,50 @@
 					}
 			}
 		}
+	}
 
+	@media (max-width: 767px) {
+		.main-header {
+			&__search {
+				input {
+					background: #293e6a;
+					text-align: center;
+					color: #ffffff !important;
 
+					&::placeholder {
+					    color: #ffffff;
+					    opacity: 1;
+					}
+
+					&:hover, &:active, &:focus {
+						background: #293e6a;
+					}
+				}
+
+				button {
+					display: none;
+				}
+			}
+
+			.back-button {
+				margin-right: 10px;
+				max-height: 25px;
+
+				button {
+					background-color: none;
+					border: none;
+					max-height: 25px;
+					width: 25px;
+					height: 25px;
+					padding: 0;
+					background-size: 90%;
+					background-position: 0px -0px !important;
+
+					&:hover {
+						cursor: pointer;
+					}
+				}
+			}
+		}
 	}
 </style>

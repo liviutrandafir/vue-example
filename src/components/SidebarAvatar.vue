@@ -1,5 +1,5 @@
 <template>
-	<div class="sidebar-avatar">
+	<div class="sidebar-avatar d-none d-sm-none d-md-block">
 		<div class="sidebar-avatar__image">
 			<img src="@/assets/avatar.png">
 		</div>
@@ -58,40 +58,6 @@
 
 			&:hover {
 				text-decoration: none;
-			}
-		}
-	}
-
-	@media (max-width: 767px) {
-		.sidebar-avatar {
-
-			&__image {
-				display: inline-block !important;
-				width: 40px;
-			}
-
-			&__pagename {
-				margin-top: 10px;
-
-				a {
-					font-size: 24px;
-					line-height: 26px;
-					color: #000000;
-
-					&:hover {
-						text-decoration: none;
-					}
-				}
-			}
-
-			&__username a {
-				font-size: 14px;
-				line-height: 24px;
-				color: #98949c;
-
-				&:hover {
-					text-decoration: none;
-				}
 			}
 		}
 	}

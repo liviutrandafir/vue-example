@@ -3,7 +3,7 @@
 		<div class="page-cover__image">
 			<img src="@/assets/cover-photo.png">
 		</div>
-		<div class="page-cover__bottom">
+		<div class="page-cover__bottom d-none d-sm-none d-md-block">
 			<b-row  align-h="between">
 				<b-col>
 					<div class="cover-options">
@@ -20,6 +20,42 @@
 					</div>
 				</b-col>
 			</b-row>
+		</div>
+		<div class="page-cover__bottom--mobile d-block d-sm-block d-md-none">
+			<div class="cover-avatar">
+				<div class="cover-avatar__image">
+					<img src="@/assets/avatar.png">
+				</div>
+				<div class="cover-avatar__text">
+					<div class="pagename">
+						<a href="#">Every Interaction</a>
+					</div>
+					<div class="username">
+						<a href="#">@EveryInteraction</a>
+					</div>
+				</div>
+			</div>
+			<div class="cover-contact">
+				<b-button size="lg" variant="primary" block>Contact Us</b-button>
+			</div>
+			<div class="cover-actions">
+				<button class="button-blue">
+					<span class="mobile-like-icon"></span>
+					<span>Liked</span>
+				</button>
+				<button class="button-blue">
+					<span class="mobile-like-icon"></span>
+					<span>Liked</span>
+				</button>
+				<button>
+					<span class="mobile-like-icon"></span>
+					<span>Liked</span>
+				</button>
+				<button>
+					<span class="mobile-like-icon"></span>
+					<span>Liked</span>
+				</button>
+			</div>
 		</div>
 	</div>
 </template>
@@ -47,6 +83,7 @@
 
 <style lang="scss">
 	@import "~/_variables.scss";
+	@import "~/_sprite-icons.scss";
 
 	.page-cover {
 
@@ -78,6 +115,96 @@
 
 			.contact-section {
 				text-align: right;
+			}
+		}
+	}
+
+	@media (max-width: 767px) {
+		.page-cover {
+			margin: 0 -15px;
+		}
+
+		.page-cover__bottom--mobile {
+			background: #ffffff;
+			padding: 10px;
+		}
+
+		.cover-avatar {
+			&__image {
+				max-width: 100px;
+				overflow: hidden;
+				border: 1px solid #e6e6e6;
+				display: inline-block;
+				margin-right: 15px;
+				vertical-align: middle;
+
+				img {
+					width: 100%;
+				}
+			}
+
+			&__text {
+				display: inline-block;
+				vertical-align: middle;
+
+				.pagename a {
+					font-size: 34px;
+					line-height: 44px;
+					color: #000000;
+
+					&:hover {
+						text-decoration: none;
+					}
+				}
+
+				.username a {
+					font-size: 18px;
+					line-height: 28px;
+					color: #98949c;
+				}
+			}
+		}
+
+		.cover-contact {
+			margin-top: 15px;
+
+			button {
+				background: $mainColor;
+				border: 1px solid $mainColor;
+			}
+		}
+
+		.cover-actions {
+			margin-top: 15px;
+			display: flex;
+
+			button {
+				flex: 1;
+				background-color: none;
+				border: none;
+				text-align: center;
+
+				&.button-blue {
+					color: $mainColor;
+				}
+
+				&:hover {
+					cursor: pointer;
+				}
+
+				span {
+					display: block;
+					font-weight: 700;
+					background-size: 90%;
+					background-position: 7px -164px;
+					left: 0;
+					right: 0;
+					margin: auto;
+
+					&:first-child {
+						margin-bottom: 10px;
+					}
+				}
 			}
 		}
 	}

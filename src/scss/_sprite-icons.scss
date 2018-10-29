@@ -1,0 +1,44 @@
+.back-icon, .logo, .messages-icon, .friends-icon, .globe-icon,
+.addphoto-icon, .ask-icon, .lock-icon, .share-icon, .status-icon,
+.message-icon, .search-icon, .dots-icon, .like-icon-blue, .like-icon,
+.address-icon, .comment-icon, .website-icon, .arrow-icon, .phone-icon,
+.globe-icon-gray
+{ display: inline-block; background: url(../assets/sprite-icons.png) no-repeat; overflow: hidden; text-indent: -9999px; text-align: left; }
+
+.back-icon { background-position: -5px -0px; width: 28px; height: 42px; }
+.logo { background-position: -5px -47px; width: 24px; height: 24px; }
+.messages-icon { background-position: -5px -76px; width: 22px; height: 19px; }
+.friends-icon { background-position: -5px -100px; width: 21px; height: 18px; }
+.globe-icon { background-position: -5px -123px; width: 19px; height: 19px; }
+.addphoto-icon { background-position: -5px -147px; width: 16px; height: 16px; }
+.ask-icon { background-position: -5px -168px; width: 16px; height: 16px; }
+.lock-icon { background-position: -5px -189px; width: 16px; height: 11px; }
+.share-icon { background-position: -5px -205px; width: 16px; height: 14px; }
+.status-icon { background-position: -5px -224px; width: 16px; height: 16px; }
+.message-icon { background-position: -5px -245px; width: 14px; height: 15px; }
+.search-icon { background-position: -5px -265px; width: 14px; height: 14px; }
+.dots-icon { background-position: -5px -284px; width: 13px; height: 3px; }
+.like-icon-blue { background-position: -5px -292px; width: 13px; height: 13px; }
+.like-icon { background-position: -5px -310px; width: 13px; height: 14px; }
+.address-icon { background-position: -5px -329px; width: 12px; height: 13px; }
+.comment-icon { background-position: -5px -347px; width: 12px; height: 14px; }
+.website-icon { background-position: -5px -366px; width: 12px; height: 12px; }
+.arrow-icon { background-position: -5px -383px; width: 11px; height: 6px; }
+.phone-icon { background-position: -5px -394px; width: 11px; height: 12px; }
+.globe-icon-gray { background-position: -5px -411px; width: 10px; height: 10px; }
+
+// Mobile icons
+
+.m-stickybar-friends-icon, .mobile-messages-icon, .m-stickybar-messenger-icon, .m-stickybar-more-icon, .m-stickybar-newsfeed-icon,
+.m-stickybar-notifications-icon, .mobile-more-icon, .mobile-like-icon, .mobile-follow-icon
+{ display: inline-block; background: url(../assets/mobile-sprite-icons.png) no-repeat; overflow: hidden; text-indent: -9999px; text-align: left; }
+
+.m-stickybar-friends-icon { background-position: -5px -0px; width: 49px; height: 42px; }
+.mobile-messages-icon { background-position: -5px -47px; width: 48px; height: 41px; }
+.m-stickybar-messenger-icon { background-position: -5px -93px; width: 42px; height: 42px; }
+.m-stickybar-more-icon { background-position: -5px -140px; width: 42px; height: 33px; }
+.m-stickybar-newsfeed-icon { background-position: -5px -178px; width: 42px; height: 39px; }
+.m-stickybar-notifications-icon { background-position: -5px -222px; width: 42px; height: 42px; }
+.mobile-more-icon { background-position: -5px -269px; width: 41px; height: 10px; }
+.mobile-like-icon { background-position: -5px -284px; width: 38px; height: 25px; }
+.mobile-follow-icon { background-position: -5px -328px; width: 37px; height: 41px; }

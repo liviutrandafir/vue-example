@@ -1,5 +1,5 @@
 <template>
-	<div class="sidebar-menu">
+	<div class="sidebar-menu d-none d-sm-none d-md-block">
 		<ul>
 			<li><a class="active" href="#" >Home</a></li>
 			<li><a href="#" >About</a></li>

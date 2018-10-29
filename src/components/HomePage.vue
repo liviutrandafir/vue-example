@@ -1,10 +1,10 @@
 <template>
   <b-container class="bv-example-row">
     <b-row>
-      <b-col col sm="12" md="12" lg="2">
+      <b-col xs="12" sm="12" md="4" lg="2">
         <PageSidebar />
       </b-col>
-      <b-col col sm="12" md="12" lg="10">
+      <b-col xs="12" sm="12" md="8" lg="10">
         <PageCover />
         <PageContent />
       </b-col>
