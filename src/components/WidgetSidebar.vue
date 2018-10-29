@@ -12,7 +12,16 @@
 				</b-col>
 			</b-row>
 		</div>
-		<div class="search-widget">
+		<div class="mobile-menu-widget d-block d-sm-block d-md-none">
+			<ul>
+				<li class="active"><a href="#">Home</a></li>
+				<li><a href="#">Reviewe</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Posts</a></li>
+				<li><a href="#">Photos</a></li>
+			</ul>
+		</div>
+		<div class="search-widget d-none d-sm-none d-md-block">
 			<b-form-input size="sm" class="mr-sm-2" type="text" placeholder="Search for posts on this page..."/>
 			<b-button type="submit"><img src="@/assets/search-icon.png"></b-button>
 		</div>
@@ -156,6 +165,34 @@ SE1 0HS London</span>
 					left: 0;
 					right: 0;
 					margin: auto;
+				}
+			}
+		}
+
+		.mobile-menu-widget {
+			background: #ffffff;
+
+			ul {
+				list-style: none;
+				padding: 0;
+				display: flex;
+
+				li {
+					flex: 1;
+
+					a {
+						display: block;
+						color: #90949c;
+						text-align: center;
+						padding: 10px;
+						font-weight: 700;
+						border-bottom: 3px solid #ffffff;
+					}
+
+					&.active a {
+						color: $mainColor;
+						border-bottom: 3px solid $mainColor;
+					}
 				}
 			}
 		}

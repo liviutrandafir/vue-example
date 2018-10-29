@@ -8,6 +8,13 @@
 				<WidgetSidebar />
 			</b-col>
 		</b-row>
+		<div class="mobile-sticky-menu d-flex d-sm-flex d-md-none">
+			<button><span class="m-stickybar-newsfeed-icon"></span></button>
+			<button><span class="m-stickybar-friends-icon"></span></button>
+			<button><span class="m-stickybar-messenger-icon"></span></button>
+			<button><span class="m-stickybar-notifications-icon"></span></button>
+			<button><span class="m-stickybar-more-icon"></span></button>
+		</div>
 	</div>
 </template>
 
@@ -28,6 +35,26 @@
 		.page-content {
 			margin: 0 -15px;
 			overflow: hidden;
+		}
+
+		.mobile-sticky-menu {
+			display: flex;
+			position: fixed;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background: #ffffff;
+
+			button {
+				flex: 1;
+				background: none;
+				border: none;
+				padding: 15px 5px 10px;
+
+				span {
+					background-size: 90%;
+				}
+			}
 		}
 	}
 </style>

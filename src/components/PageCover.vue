@@ -146,10 +146,11 @@
 			&__text {
 				display: inline-block;
 				vertical-align: middle;
+				max-width: 65%;
 
 				.pagename a {
-					font-size: 34px;
-					line-height: 44px;
+					font-size: 30px;
+					line-height: 40px;
 					color: #000000;
 
 					&:hover {
@@ -180,7 +181,7 @@
 
 			button {
 				flex: 1;
-				background-color: none;
+				background-color: transparent;
 				border: none;
 				text-align: center;
 				color: #6a7180;
@@ -208,4 +209,22 @@
 			}
 		}
 	}
+
+	@media (max-width: 375px) {
+
+		.cover-avatar__text {
+			max-width: 60%;
+
+			.pagename a {
+				font-size: 26px;
+				line-height: 36px;
+			}
+
+			.username a {
+				font-size: 16px;
+				line-height: 26px;
+			}
+		}
+	}
+
 </style>
