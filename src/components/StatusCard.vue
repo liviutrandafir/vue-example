@@ -50,6 +50,7 @@
 
 				a {
 					margin-right: 5px;
+					border: none;
 
 					span {
 						vertical-align: middle;
