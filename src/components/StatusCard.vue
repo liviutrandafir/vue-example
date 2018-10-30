@@ -71,6 +71,7 @@
 			color: #365899;
 			border: none;
 			position: relative;
+			border: none;
 
 			&:hover {
 				border: none;
