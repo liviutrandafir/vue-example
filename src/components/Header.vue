@@ -2,7 +2,7 @@
 	<div class="main-header">
 		<b-container>
 			<b-row>
-				<b-col sm="12" md="6">
+				<b-col sm="12" md="5" lg="6">
 					<div class="navbar-left">
 						<b-navbar-brand class="d-none d-sm-none d-md-block" href="#"><img src="@/assets/logo.png"></b-navbar-brand>
 						<div class="back-button d-block d-sm-block d-md-none">
@@ -14,7 +14,7 @@
 						</b-nav-form>
 					</div>
 				</b-col>
-				<b-col sm="6" class="d-none d-sm-none d-md-block">
+				<b-col sm="6" md="7" lg="6" class="d-none d-sm-none d-md-block">
 					<div class="navbar-right">
 						<div class="options-menu">
 							<div class="profile-button">

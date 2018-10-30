@@ -23,7 +23,7 @@
 		</div>
 		<div class="search-widget d-none d-sm-none d-md-block">
 			<b-form-input size="sm" class="mr-sm-2" type="text" placeholder="Search for posts on this page..."/>
-			<b-button type="submit"><img src="@/assets/search-icon.png"></b-button>
+			<b-button type="submit"><span class="search-icon"></span></b-button>
 		</div>
 		<div class="about-widget">
 			<div class="about-widget__header">
@@ -35,20 +35,20 @@
 				</div>
 				<div class="about-widget-text">
 					<div class="address">
-						<span class="icon"><img src="@/assets/address-icon.png"></span><span class="text">Metal Box Factory, 30 Great Guildford St      Save
+						<span class="icon address-icon"></span><span class="text">Metal Box Factory, 30 Great Guildford St      Save
 SE1 0HS London</span>
 					</div>
 					<div class="phone">
-						<span class="icon"><img src="@/assets/phone-icon.png"></span><span class="text">020 3514 0659</span>
+						<span class="icon phone-icon"></span><span class="text">020 3514 0659</span>
 					</div>
 					<div class="ask">
 						<a href="#">
-							<span class="icon"><img src="@/assets/ask-icon.png"></span><span class="text">Ask for Every Interaction’s hours</span>
+							<span class="icon ask-icon"></span><span class="text">Ask for Every Interaction’s hours</span>
 						</a>
 					</div>
 					<div class="website">
 						<a href="#">
-							<span class="icon"><img src="@/assets/website-icon.png"></span><span class="text">http://ww.everyinteraction.com/</span>
+							<span class="icon website-icon"></span><span class="text">http://ww.everyinteraction.com/</span>
 						</a>
 					</div>
 				</div>

@@ -9,7 +9,8 @@
 					<div class="cover-options">
 						<b-button-group size="sm">
 				      <b-button v-for="btn in buttons" :pressed.sync="btn.state" :variant="btn.variant" :key="btn.caption">
-								<img :src="btn.icon"> {{ btn.caption }}
+								<span v-bind:class="btn.icon"></span>
+								<span>{{ btn.caption }}</span>
 				      </b-button>
 				    </b-button-group>
 					</div>
@@ -67,9 +68,9 @@
 	    return {
 	      myToggle: false,
 	      buttons: [
-	        { variant: 'outline-secondary', caption: 'Liked', icon: require('@/assets/like-icon-blue.png') },
-	        { variant: 'outline-secondary', caption: 'Message', icon: require('@/assets/message-icon.png') },
-	        { variant: 'outline-secondary', caption: 'More', icon: require('@/assets/dots-icon.png') },
+	        { variant: 'outline-secondary', caption: 'Liked', icon: 'like-icon-blue' },
+	        { variant: 'outline-secondary', caption: 'Message', icon: 'message-icon' },
+	        { variant: 'outline-secondary', caption: 'More', icon: 'dots-icon' },
 	      ]
 	    }
 	  },
@@ -107,9 +108,19 @@
     		color: #4a4e58;
     		background: #f6f7f9;
 				border-color: #ced0d4;
+				padding: 3px 8px 5px;
 
 				&:hover {
 					background: $buttonsBg;
+				}
+
+				span {
+					vertical-align: middle;
+					font-weight: 700;
+
+					&:first-child {
+						margin-right: 5px;
+					}
 				}
     	}
 

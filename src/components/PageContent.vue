@@ -1,10 +1,10 @@
 <template>
 	<div class="page-content">
 		<b-row>
-			<b-col  xs="12" sm="12" md="8" lg="8" order="2" order-sm="2" order-md="1" order-lg="1">
+			<b-col  xs="12" sm="12" md="12" lg="8" order="2" order-sm="2" order-md="1" order-lg="1">
 				<NewsFeed />
 			</b-col>
-			<b-col  xs="12" sm="12" md="4" lg="4" order="1" order-sm="1" order-md="2" order-lg="2">
+			<b-col  xs="12" sm="12" md="12" lg="4" order="1" order-sm="1" order-md="2" order-lg="2">
 				<WidgetSidebar />
 			</b-col>
 		</b-row>

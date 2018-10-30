@@ -4,7 +4,7 @@
 		  <b-tabs card>
 		    <b-tab active>
 					<template slot="title">
-						<img src="@/assets/status-icon.png">
+						<span class="status-icon"></span>
 						<span>Status</span>
 					</template>
 					<div class="status-card-content">
@@ -18,7 +18,7 @@
 		    </b-tab>
 		    <b-tab>
 					<template slot="title">
-						<img src="@/assets/addphoto-icon.png">
+						<span class="addphoto-icon"></span>
 						<span>Photo/video</span>
 					</template>
 					<div class="status-card-drag">
@@ -47,6 +47,18 @@
 
 			ul {
 				margin: 0;
+
+				a {
+					margin-right: 5px;
+
+					span {
+						vertical-align: middle;
+						margin-right: 3px;
+						font-size: 14px;
+						font-weight: 700;
+					}
+				}
+
 
 				&:focus {
 					outline: none;

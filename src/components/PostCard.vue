@@ -10,7 +10,7 @@
 						<span>Every Interaction</span>
 					</div>
 					<div class="avatar-hours">
-						<span>23h • <img src="@/assets/globe-icon-gray.png"></span>
+						<span>23h • <span class="globe-icon-gray"></span></span>
 					</div>
 				</div>
 			</div>
@@ -34,9 +34,9 @@
 				</div>
 			</div>
 			<div class="post-content__options">
-				<button><img src="@/assets/like-icon.png"> Like</button>
-				<button><img src="@/assets/comment-icon.png"> Comment</button>
-				<button><img src="@/assets/share-icon.png"> Share</button>
+				<button><span class="like-icon"></span> <span>Like</span></button>
+				<button><span class="comment-icon"></span> <span>Comment</span></button>
+				<button><span class="share-icon"></span> <span>Share</span></button>
 			</div>
 		</div>
 		<div class="post-card__footer">
@@ -154,7 +154,12 @@
 				font-weight: 700;
 				color: #7f7f7f;
 
+				span {
+					vertical-align: middle;
+				}
+
 				&:hover {
+					opacity: 0.8;
 					cursor: pointer;
 				}
 			}
