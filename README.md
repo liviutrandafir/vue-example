@@ -1,6 +1,6 @@
 # optaros-test
 
-[Link to demo](https://liviutrandafir.github.io/test-optaros/dist/#/).
+[Link to demo](https://liviutrandafir.github.io/vue-example/dist/#/).
 
 > A Vue.js project
 
